@@ -1,0 +1,81 @@
+---
+import Footer from "@/components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+---
+
+<Layout
+  title="Frontend Mentor | Huddle landing page with alternating feature blocks"
+>
+  <!-- Header -->
+  <header
+    class="flex items-center justify-between bg-[#EDFBFF] px-4 pt-[1.69rem] xl:px-20 xl:pt-[3.12rem]"
+  >
+    <div class="w-[6.5rem] xl:w-[12.5rem]">
+      <img src="/public/images/logo.svg" alt="logo" class="" />
+    </div>
+    <button
+      type="button"
+      class="h-6 w-24 rounded-xl bg-[#fff] font-OpenSans text-[0.625rem] font-bold leading-normal text-[#00252E] xl:h-12 xl:w-[12.5rem] xl:rounded-[1.5rem] xl:text-[0.875rem]"
+      >Try It Free</button
+    >
+  </header>
+  <main>
+    <!-- Hero -->
+    <section
+      class="flex flex-col-reverse gap-14 bg-[#EDFBFF] pb-[2.31rem] pl-[2.25rem] pr-[2.19rem] pt-[5.25rem] xl:flex-row xl:gap-[4.38rem] xl:pl-20 xl:pr-[5.63rem]"
+    >
+      <div
+        class="flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:gap-8 xl:text-left"
+      >
+        <h1
+          class="w-[17.5rem] font-Poppins text-2xl font-semibold leading-[2.25rem] text-[#00252E] xl:w-[31.5rem] xl:text-[2.5rem] xl:leading-[3.75rem]"
+        >
+          Build The Community Your Fans Will Love
+        </h1>
+        <p
+          class="mb-2 font-OpenSans text-base font-normal leading-6 text-[#00252E] xl:mb-0 xl:w-[32.5rem] xl:text-[1.125rem] xl:leading-relaxed"
+        >
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <button
+          type="button"
+          class="HeroBtn h-10 w-[15rem] rounded-[1.25rem] bg-[#FF52C1] font-OpenSans text-xs font-bold leading-normal text-[#fff] transition-colors duration-500 ease-linear hover:bg-[#FF9ADB] xl:h-14 xl:w-[17.5rem] xl:rounded-[1.75rem]"
+        >
+          Get Started For Free
+        </button>
+      </div>
+      <div class="">
+        <img src="/public/images/illustration-mockups.svg" alt="" class="" />
+      </div>
+    </section>
+    <!-- Build Your Community Section -->
+    <section
+      class="communitySection relative bottom-[-4rem] ml-3 mr-[0.69rem] flex h-44 w-[22rem] flex-col items-center justify-center gap-6 rounded-[0.9375rem] bg-[#fff] xl:bottom-[-6.188rem] xl:mx-[20rem] xl:h-[17.5rem] xl:w-[50rem]"
+    >
+      <h2
+        class="font-Poppins text-lg font-semibold leading-[1.875rem] text-[#00252E] xl:text-[2rem] xl:leading-[3.75rem]"
+      >
+        Ready To Build Your Community?
+      </h2>
+      <button
+        type="button"
+        class="h-10 w-[12.5rem] rounded-[2.5rem] bg-[#FF52C1] font-OpenSans text-[0.625rem] font-bold leading-[0.9375rem] text-[#fff] transition-colors duration-500 ease-linear hover:bg-[#FF9ADB] xl:h-20 xl:w-[25rem] xl:text-xl xl:leading-[1.875rem]"
+        >Get Started For Free</button
+      >
+    </section>
+  </main>
+  <!-- Footer -->
+  <Footer />
+</Layout>
+
+<style>
+  .communitySection {
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
+  }
+  .HeroBtn {
+    box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.17);
+  }
+</style>
