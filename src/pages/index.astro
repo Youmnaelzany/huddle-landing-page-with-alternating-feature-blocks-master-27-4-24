@@ -9,14 +9,14 @@ import "@/styles/globals.css";
 >
   <!-- Header -->
   <header
-    class="flex items-center justify-between bg-[#EDFBFF] px-4 pt-[1.69rem] xl:px-20 xl:pt-[3.12rem]"
+    class="relative flex items-center justify-between bg-[#EDFBFF] px-4 pt-[1.69rem] xl:px-20 xl:pt-[3.12rem]"
   >
-    <div class="w-[6.5rem] xl:w-[12.5rem]">
-      <img src="/public/images/logo.svg" alt="logo" class="" />
+    <div class="z-50 w-[6.5rem] xl:w-[12.5rem]">
+      <img src="/images/logo.svg" alt="logo" class="" />
     </div>
     <button
       type="button"
-      class="h-6 w-24 rounded-xl bg-[#fff] font-OpenSans text-[0.625rem] font-bold leading-normal text-[#00252E] transition-colors duration-500 ease-linear hover:text-[#808E9A] xl:h-12 xl:w-[12.5rem] xl:rounded-[1.5rem] xl:text-[0.875rem]"
+      class="z-50 h-6 w-24 rounded-xl bg-[#fff] font-OpenSans text-[0.625rem] font-bold leading-normal text-[#00252E] transition-colors duration-500 ease-linear hover:text-[#808E9A] xl:h-12 xl:w-[12.5rem] xl:rounded-[1.5rem] xl:text-[0.875rem]"
       >Try It Free</button
     >
   </header>
@@ -24,10 +24,10 @@ import "@/styles/globals.css";
   <main>
     <!-- Hero -->
     <section
-      class="flex flex-col-reverse gap-14 bg-[#EDFBFF] pb-[2.31rem] pl-[2.25rem] pr-[2.19rem] pt-[5.25rem] xl:flex-row xl:gap-[4.38rem] xl:pl-20 xl:pr-[5.63rem]"
+      class="flex flex-col gap-14 bg-[#EDFBFF] pb-[2.31rem] pl-[2.25rem] pr-[2.19rem] pt-[5.25rem] xl:flex-row xl:gap-[4.38rem] xl:pl-20 xl:pr-[5.63rem]"
     >
       <div
-        class="flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:gap-8 xl:text-left"
+        class="z-50 flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:gap-8 xl:text-left"
       >
         <h1
           class="w-[17.5rem] font-Poppins text-2xl font-semibold leading-[2.25rem] text-[#00252E] xl:w-[31.5rem] xl:text-[2.5rem] xl:leading-[3.75rem]"
@@ -49,8 +49,20 @@ import "@/styles/globals.css";
         </button>
       </div>
       <div class="">
-        <img src="/public/images/illustration-mockups.svg" alt="" class="" />
+        <img src="/images/illustration-mockups.svg" alt="" class="" />
       </div>
+      <!-- Pattern -->
+      <picture class="">
+        <source
+          media="(min-width:768px )"
+          srcset="/images/bg-hero-desktop.svg"
+        />
+        <img
+          src="/images/bg-hero-mobile.svg"
+          alt="bg-hero"
+          class="absolute top-0 bg-contain bg-no-repeat"
+        />
+      </picture>
     </section>
     <!-- Stats -->
     <section
@@ -80,7 +92,7 @@ import "@/styles/globals.css";
         <!-- Image -->
         <div class="">
           <img
-            src="/public/images/illustration-grow-together.svg"
+            src="/images/illustration-grow-together.svg"
             alt="illustration-grow-together"
             class=""
           />
@@ -110,7 +122,7 @@ import "@/styles/globals.css";
         <!-- Image -->
         <div class="xl:pl-[7.54rem]">
           <img
-            src="/public/images/illustration-flowing-conversation.svg"
+            src="/images/illustration-flowing-conversation.svg"
             alt="illustration-grow-together"
             class=""
           />
@@ -140,7 +152,7 @@ import "@/styles/globals.css";
         <!-- Image -->
         <div class="">
           <img
-            src="/public/images/illustration-your-users.svg"
+            src="/images/illustration-your-users.svg"
             alt="illustration-grow-together"
             class=""
           />
