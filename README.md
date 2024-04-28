@@ -16,8 +16,8 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Youmnaelzany/huddle-landing-page-with-alternating-feature-blocks-master-27-4-24.git)
+- Live Site URL: [Add live site URL here](https://huddlelandingpage274.netlify.app/)
 
 ### Built with
 
