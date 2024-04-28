@@ -16,10 +16,11 @@ import "@/styles/globals.css";
     </div>
     <button
       type="button"
-      class="h-6 w-24 rounded-xl bg-[#fff] font-OpenSans text-[0.625rem] font-bold leading-normal text-[#00252E] xl:h-12 xl:w-[12.5rem] xl:rounded-[1.5rem] xl:text-[0.875rem]"
+      class="h-6 w-24 rounded-xl bg-[#fff] font-OpenSans text-[0.625rem] font-bold leading-normal text-[#00252E] transition-colors duration-500 ease-linear hover:text-[#808E9A] xl:h-12 xl:w-[12.5rem] xl:rounded-[1.5rem] xl:text-[0.875rem]"
       >Try It Free</button
     >
   </header>
+  <!-- Main -->
   <main>
     <!-- Hero -->
     <section
@@ -51,6 +52,101 @@ import "@/styles/globals.css";
         <img src="/public/images/illustration-mockups.svg" alt="" class="" />
       </div>
     </section>
+    <!-- Stats -->
+    <section
+      class="mx-[1.25rem] mb-[4rem] mt-[3.69rem] flex flex-col gap-10 xl:mx-[6.5rem] xl:mt-40"
+    >
+      <!-- Grow Together -->
+      <div
+        class="statsBox flex h-[30.5rem] w-[20.9375rem] flex-col-reverse items-center gap-[3.38rem] rounded-2xl bg-[#fff] pb-[2.06rem] pl-10 pr-[2.44rem] pt-14 xl:h-[27.5rem] xl:w-[77rem] xl:flex-row xl:gap-[11.58rem]"
+      >
+        <!-- Text -->
+        <div
+          class="item-center flex flex-col items-center justify-center gap-4 text-center xl:items-start xl:pl-[7.5rem] xl:text-left"
+        >
+          <h2
+            class="tetx-[#00252E] font-Poppins text-xl font-semibold leading-[1.875rem] xl:text-[1.75rem] xl:leading-[2.625rem]"
+          >
+            Grow Together
+          </h2>
+          <p
+            class="w-[16rem] font-OpenSans text-sm font-normal leading-[1.3125rem] text-[#808E9A] xl:w-[30.5rem] xl:text-lg xl:leading-relaxed"
+          >
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </div>
+        <!-- Image -->
+        <div class="">
+          <img
+            src="/public/images/illustration-grow-together.svg"
+            alt="illustration-grow-together"
+            class=""
+          />
+        </div>
+      </div>
+      <!-- Flowing Conversations-->
+      <div
+        class="statsBox flex h-[30.5rem] w-[20.9375rem] flex-col-reverse items-center gap-[3.38rem] rounded-2xl bg-[#fff] pb-[2.06rem] pl-10 pr-[2.44rem] pt-14 xl:h-[27.5rem] xl:w-[77rem] xl:flex-row-reverse xl:gap-[11.58rem]"
+      >
+        <!-- Text -->
+        <div
+          class="item-center flex flex-col items-center justify-center gap-4 text-center xl:items-start xl:text-left"
+        >
+          <h2
+            class="tetx-[#00252E] font-Poppins text-xl font-semibold leading-[1.875rem] xl:text-[1.75rem] xl:leading-[2.625rem]"
+          >
+            Flowing Conversations
+          </h2>
+          <p
+            class="w-[16rem] font-OpenSans text-sm font-normal leading-[1.3125rem] text-[#808E9A] xl:w-[30.5rem] xl:text-lg xl:leading-relaxed"
+          >
+            You wouldn't paginate a conversation in real life, so why do it
+            online? Our threads have just-in-time loading for a more natural
+            flow.
+          </p>
+        </div>
+        <!-- Image -->
+        <div class="xl:pl-[7.54rem]">
+          <img
+            src="/public/images/illustration-flowing-conversation.svg"
+            alt="illustration-grow-together"
+            class=""
+          />
+        </div>
+      </div>
+      <!-- Your Users -->
+      <div
+        class="statsBox flex h-[30.5rem] w-[20.9375rem] flex-col-reverse items-center gap-[3.38rem] rounded-2xl bg-[#fff] pb-[2.06rem] pl-10 pr-[2.44rem] pt-14 xl:h-[27.5rem] xl:w-[77rem] xl:flex-row xl:gap-[11.58rem]"
+      >
+        <!-- Text -->
+        <div
+          class="item-center flex flex-col items-center justify-center gap-4 text-center xl:items-start xl:pl-[7.5rem] xl:text-left"
+        >
+          <h2
+            class="tetx-[#00252E] font-Poppins text-xl font-semibold leading-[1.875rem] xl:text-[1.75rem] xl:leading-[2.625rem]"
+          >
+            Your Users
+          </h2>
+          <p
+            class="w-[16rem] font-OpenSans text-sm font-normal leading-[1.3125rem] text-[#808E9A] xl:w-[30.5rem] xl:text-lg xl:leading-relaxed"
+          >
+            It takes no time at all to integrate Huddle with your app's
+            authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.
+          </p>
+        </div>
+        <!-- Image -->
+        <div class="">
+          <img
+            src="/public/images/illustration-your-users.svg"
+            alt="illustration-grow-together"
+            class=""
+          />
+        </div>
+      </div>
+    </section>
     <!-- Build Your Community Section -->
     <section
       class="communitySection relative bottom-[-4rem] ml-3 mr-[0.69rem] flex h-44 w-[22rem] flex-col items-center justify-center gap-6 rounded-[0.9375rem] bg-[#fff] xl:bottom-[-6.188rem] xl:mx-[20rem] xl:h-[17.5rem] xl:w-[50rem]"
@@ -77,5 +173,8 @@ import "@/styles/globals.css";
   }
   .HeroBtn {
     box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.17);
+  }
+  .statsBox {
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
   }
 </style>
